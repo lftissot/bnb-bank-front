@@ -124,13 +124,15 @@ export default {
           .then(() => {
             ElMessage.success({
               message: "Expense successfully registered!",
-              duration: 5000,
+              "show-close": true,
+              duration: 2000,
             });
             this.$router.push("/banking/expenses");
           })
           .catch(() => {
             ElMessage.error({
               message: "Oops. Something unexpected went wrong.",
+              "show-close": true,
               duration: 5000,
             });
           });

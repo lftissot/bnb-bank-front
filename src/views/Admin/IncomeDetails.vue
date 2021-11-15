@@ -65,13 +65,15 @@ export default {
         .then(() => {
           ElMessage.success({
             message: "Check successfully approved!",
-            duration: 5000,
+            "show-close": true,
+            duration: 2000,
           });
           this.$router.push("/admin/pending");
         })
         .catch(() => {
           ElMessage.error({
             message: "Oops. Something unexpected went wrong.",
+            "show-close": true,
             duration: 5000,
           });
         });
@@ -81,13 +83,15 @@ export default {
         .then(() => {
           ElMessage.success({
             message: "Check successfully rejected!",
-            duration: 5000,
+            "show-close": true,
+            duration: 2000,
           });
           this.$router.push("/admin/pending");
         })
         .catch(() => {
           ElMessage.error({
             message: "Oops. Something unexpected went wrong.",
+            "show-close": true,
             duration: 5000,
           });
         });

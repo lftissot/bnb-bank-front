@@ -98,6 +98,7 @@ export default {
         } else {
           ElMessage.error({
             message: "Oops. Invalid user or password.",
+            "show-close": true,
             duration: 5000,
           });
         }

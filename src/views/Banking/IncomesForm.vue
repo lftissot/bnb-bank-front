@@ -124,13 +124,15 @@ export default {
         .then(() => {
           ElMessage.success({
             message: "Check successfully registered!",
-            duration: 5000,
+            "show-close": true,
+            duration: 2000,
           });
           this.$router.push("/banking/incomes");
         })
         .catch(() => {
           ElMessage.error({
             message: "Oops. Something unexpected went wrong.",
+            "show-close": true,
             duration: 5000,
           });
         });
@@ -149,6 +151,7 @@ export default {
         ElMessage({
           message: "The file must be an image",
           type: "error",
+          "show-close": true,
           duration: 5000,
         });
       }

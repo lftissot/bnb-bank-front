@@ -58,6 +58,7 @@ export default {
         AuthService.register(this.form);
         ElMessage.success({
           message: "User successfully registered!",
+          "show-close": true,
           duration: 5000,
         });
         this.$router.push("/login");
